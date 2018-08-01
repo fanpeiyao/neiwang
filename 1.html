@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var data = [{ a:'123', b: '456', c: '789'},{ a:'213', b: '456', c: '789'},{ a:'321', b: '456', c: '789'}];
+        var dataObj = {};//在外面定义对象
+        var dataArr = [];
+        for(let i=0;i<data.length;i++) {
+            console.log(i)
+            dataObj= data[i];
+            dataArr.push(dataObj);
+        }
+        console.log(dataArr)
+        /*var dataArr = [];
+        for(var i in data){
+            var dataObj = {};//在里面定义对象
+            dataObj= data[i];
+            dataArr.push(dataObj);
+        }
+        console.log(dataArr)*/
+
+    </script>
+</body>
+</html>
